@@ -4,7 +4,7 @@ This is just a basic wrapper for libcurl to make it relatively easier to create 
 ## How to setup:
 1. Take the pre-built "curl" folder and place it in your project file in the same location as the source files
 
-2. Right click project properties and go to Linker->Input and paste this in "Additional Dependencies":  libcurl_a.lib;Ws2_32.lib;Crypt32.lib;Wldap32.lib;Normaliz.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies
+2. Right click project properties and go to Linker->Input and paste this in "Additional Dependencies":  libcurl_a.lib;Ws2_32.lib;Crypt32.lib;Wldap32.lib;Normaliz.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;
 
 3. In project properties go to Linker>General and paste the complete directory to the curl/lib folder in "Additional Library Directories"
 
