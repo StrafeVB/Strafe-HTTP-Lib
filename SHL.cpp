@@ -79,12 +79,3 @@ StrafeHttpReq::~StrafeHttpReq(void)
 {
 	curl_global_cleanup();
 }
-
-int main()
-{
-	std::unique_ptr<StrafeHttpReq> shr(new StrafeHttpReq());
-	std::cout << shr->HttpsPost("https://voidbound.xyz/login.php", "SIRC/1.0", shr->CreateSafePostData("user=", "y f0ur") + shr->CreateSafePostData("&pass=", "test")) << std::endl;
-
-	getchar();
-	return 0;
-}
