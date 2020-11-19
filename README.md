@@ -6,11 +6,13 @@ This is just a basic wrapper for libcurl to make it relatively easier to create 
 
 2. Right click project properties and go to Linker->Input and paste this in "Additional Dependencies":  libcurl_a.lib;Ws2_32.lib;Crypt32.lib;Wldap32.lib;Normaliz.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;
 
-3. In project properties go to Linker->General and paste the complete directory to the curl/lib folder in "Additional Library Directories"
+3. In project properties go to C/C++-> Preprocessor and paste put this into the "Preprocessor Definitions" _CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;
 
-4. In project properties go to C/C++->General and paste the complete directory to the curl/include folder in "Additional Include Directories"
+4. In project properties go to Linker->General and paste the complete directory to the curl/lib folder in "Additional Library Directories"
 
-5. Profit
+5. In project properties go to C/C++->General and paste the complete directory to the curl/include folder in "Additional Include Directories"
+
+6. Profit
 
 ## Usage:
 (Include the "SHL.hpp" file in your source file)
