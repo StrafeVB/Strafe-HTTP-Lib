@@ -1,6 +1,8 @@
 # Strafe-HTTP-Lib (x64-release only atm)
 This is just a basic wrapper for libcurl to make it relatively easier to create HTTPS POST requests in C++, most credits go to the libcurl, and curl project https://curl.se/libcurl/
 
+I'll add more to this later, for now this only has the ability to make HTTPS POST requests and nothing else but I will add more later.
+
 ## How to setup:
 1. Take the pre-built "curl" folder and place it in your project file in the same location as the source files
 
