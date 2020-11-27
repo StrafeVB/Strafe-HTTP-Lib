@@ -43,8 +43,6 @@ std::string StrafeHttpReq::HttpsPost(std::string url, std::string useragent, std
 
 	curl_easy_cleanup(postreq);
 
-	std::cout << webresponse << std::endl;
-
 	return webresponse;
 }
 
