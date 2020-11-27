@@ -19,7 +19,7 @@ I'll add more to this later, for now this only has the ability to make HTTPS POS
 ## Usage:
 (Include the "SHL.hpp" file in your source file)
 ```cpp
-std::unique_ptr<StrafeHttpReq> shr(new StrafeHttpReq());
+std::unique_ptr<StrafeHttpReq> shr = std::make_unique<StrafeHttpReq>();
 std::string response = shr->HttpsPost("https://strafe.gov/mostwanted.php", "Your user-agent", shr->CreateSafePostData("name=", "922fire"));
 ```
 
