@@ -14,7 +14,7 @@ static size_t CurlToString(char* str, size_t sz, size_t nmem, std::string* strst
 std::string StrafeHttpReq::HttpsPost(std::string url, std::string useragent, std::string postdat = "")
 {
 	if (url.empty())
-		throw std::invalid_argument("No url provided"); // wtf how could this even happen? unless ur jayden
+		throw std::invalid_argument("No url provided");
 
 	if (useragent.empty())
 		throw std::invalid_argument("No user-agent provided");
